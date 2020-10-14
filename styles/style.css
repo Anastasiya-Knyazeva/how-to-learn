@@ -36,8 +36,10 @@
 /*расположение логотипа*/
 
 .header__title{
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin: 0;
+  align-self: center;
   margin-left: 64px;
   width: 730px;
   flex-direction: column;
@@ -47,6 +49,7 @@
   font-size: 102px;
   font-weight: bold;
   z-index: 2;
+  
 }
 /*стили и расположение заголовка*/
 
@@ -58,11 +61,14 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+  z-index: 2;
 }
 /*стили и расположение текста с сылкой*/
 
 .header__link{
   color: #2f80ed;
+  text-decoration: none;
 }
 /*ссылка из текста*/
 
@@ -115,19 +121,21 @@
 
 .two-columns__brief{
   width: 175px;
-  height: 1.2;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 /*левая колонка таблицы*/
 
 .two-columns__main-text{
   width: 80%;
   min-width: 784px;
-  min-height: 272px;
+  /*min-height: 272px;*/
   display: flex;
   flex-direction: column;
+  
 }
 /*правая колонка таблицы*/
 
@@ -135,11 +143,17 @@
   align-items: center;
   font-size: 24px;
   font-weight: normal;
-  height: 100%;
+  /*height: 100%;*/
+  margin: 0;
+  padding-bottom: 30px;
   }
 /*строки правой колонки*/
 
-.two-columns__paragraph_span{
+.two-columns__paragraph:last-of-type{
+  padding: 0;
+}
+
+/*.two-columns__paragraph_span{
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -149,12 +163,6 @@
   font-weight: bold;
 }
 /*начертание для Вывода*/
-
-.two-columns__paragraph p{
-    margin: 0;
-}
-/*обнуление отступов в строках правой колонки*/
-
 
 .digits{
   display: flex;
@@ -201,6 +209,7 @@
   font-weight: bold;
   /*padding-top: 100px;*/
   margin: 0 0 20px 0;
+  z-index: 1;
 }
 /*заголовок*/
 
@@ -221,10 +230,9 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
+  
 }
 /*блок с карточками*/
 
@@ -239,6 +247,7 @@
 .table__cell_theme_dark{
   width: 200px;
   z-index: 1;
+  margin-top: 80px;
 }
 /*карточка темная тема*/
  
@@ -247,6 +256,7 @@
   font-size: 24px;
   font-weight: bold;
   padding: 0;
+  margin: 0;
 }
 /*заголовок карточки*/
 
@@ -255,24 +265,16 @@
   font-size: 18px;
   font-weight: normal;
   margin: 0;
+  padding-top: 20px;
   display: flex;                      /*?*/
   flex-direction: column;
   justify-content: space-between; 
 }
 /*текст карточки*/
 
-.table__text p{               
-  margin: 20px 0 0 0;
-}
-/*поля для текста карточки*/
-
-.table__heading p{
-  margin: 0;
-}
-/*поля для заголовка карточки*/
 
 .feynman{
-  height: 790px;
+  min-height: 790px;
   position: relative;
   background-color: #f2f2f2;
   /*display: flex;*/
@@ -287,7 +289,7 @@
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
-  font-weight: normal;
+  font-weight: bold;
   margin: 100px auto 70px;
   padding: 0;
   text-align: center;
@@ -297,9 +299,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .feynman__link{
@@ -310,6 +310,7 @@
   position: absolute;
   top: 50%;
   right: 48px;
+  text-decoration: none;
 }
 
 .footer{
@@ -317,6 +318,8 @@
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
+  min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__columns{
@@ -328,7 +331,7 @@
   justify-content: space-between;
   /*text-align: end;*/
   color: white;
-  min-height: 350px;
+  
   
 }
 
@@ -343,7 +346,6 @@
 .footer__column_content_info{
   display: flex;
   flex-direction: column;
-  width: 25%;
   
 }
 
@@ -356,7 +358,8 @@
 .footer__column_content_social{
   display: flex;
   flex-direction: column;
-  width: 25%;
+  
+  
 }
 
 .footer__column-links{
@@ -364,21 +367,15 @@
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 16px;
-  
 }
 
-.footer__columns p{
-  margin: 0;
-  padding: 0;
-}
-
-.footer__column-links img{
+.footer__social-icon{
   height: 16px;
   width: 16px;
   padding-right: 10px;
 }
 
-.footer__columns a{
+.footer__link{
   text-decoration: none;
   color: white;
   line-height: 30px;
@@ -393,10 +390,12 @@
   margin-top: 18px;
   margin-bottom: 18px;
   text-align: start;
+  text-decoration: none;
+  color: white;
 }
 
 .logo_place_footer{
   height: 35px;
-  width: 183px;
+  
   
 }
