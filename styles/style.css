@@ -353,13 +353,12 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  
 }
 
 .footer__column_content_social{
   display: flex;
-  flex-direction: column;
-  
-  
+  flex-direction: column; 
 }
 
 .footer__column-links{
@@ -367,6 +366,12 @@
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 16px;
+   
+}
+
+.nav{
+  padding: 0;
+  margin: 0;
 }
 
 .footer__social-icon{
@@ -381,6 +386,12 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  list-style: none;
+
+}
+
+.nav{
+  list-style: none;
 }
 
 .footer__author{
