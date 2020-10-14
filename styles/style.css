@@ -372,6 +372,7 @@
 .nav{
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .footer__social-icon{
@@ -388,10 +389,6 @@
   font-weight: normal;
   list-style: none;
 
-}
-
-.nav{
-  list-style: none;
 }
 
 .footer__author{
