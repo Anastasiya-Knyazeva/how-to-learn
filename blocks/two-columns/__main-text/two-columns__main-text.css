@@ -1,0 +1,10 @@
+
+.two-columns__main-text{
+    width: 80%;
+    min-width: 784px;
+    /*min-height: 272px;*/
+    display: flex;
+    flex-direction: column;
+    
+  }
+  /*правая колонка таблицы*/

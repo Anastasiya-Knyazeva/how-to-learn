@@ -1,0 +1,10 @@
+.two-columns__paragraph{
+    align-items: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    /*height: 100%;*/
+    margin: 0;
+    padding-bottom: 30px;
+    }
+  /*строки правой колонки*/

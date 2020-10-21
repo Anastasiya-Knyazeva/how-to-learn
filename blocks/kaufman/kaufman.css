@@ -1,0 +1,11 @@
+.kaufman{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: white;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  /*внешний контейнер черной темы*/

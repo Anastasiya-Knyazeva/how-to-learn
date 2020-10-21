@@ -1,0 +1,17 @@
+.header__title{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0;
+    align-self: center;
+    margin-left: 64px;
+    width: 730px;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+    z-index: 2;
+    
+  }
+  /*стили и расположение заголовка*/
