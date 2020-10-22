@@ -7,5 +7,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
   /*внешний контейнер черной темы*/
