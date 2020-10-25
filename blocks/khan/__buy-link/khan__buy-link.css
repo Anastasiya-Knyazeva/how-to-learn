@@ -4,7 +4,8 @@
     font-weight: normal;
     color: #2f80ed;
     text-decoration: none;
-    
+    display: flex;
+    align-self: flex-start;
   }
 
 
